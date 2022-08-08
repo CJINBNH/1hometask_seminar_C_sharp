@@ -1,17 +1,10 @@
 ﻿Console.Clear();
 Console.WriteLine("Введите любое целое число: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int count = 1;
-while (count <= N)
+int count = 2;
+while (count < N)
 {
-    if (count % 2 != 0)
-    {
-        count = count + 1;
-        Console.Write(count);
-        Console.Write(" ");
-    }
-    else
-    {
-        count = count + 1;
-    }
+    Console.Write(count);
+    Console.Write(" ");
+    count += 2;
 }
