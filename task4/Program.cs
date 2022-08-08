@@ -7,16 +7,12 @@ Console.WriteLine("Введите третье число: ");
 int thirdNumber = Convert.ToInt32(Console.ReadLine());
 int max = firstNumber;
 //нужно сравнить два числа и вывести большее
-if (firstNumber > secondNumber)
-{
-    Console.Write("max = ");
-}
-else if (secondNumber > thirdNumber)
+if (max < secondNumber)
 {
     max = secondNumber;
     Console.Write("max = ");
 }
-else if (thirdNumber > firstNumber)
+if (max < thirdNumber)
 {
     max = thirdNumber;
     Console.Write("max = ");
